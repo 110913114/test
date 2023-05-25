@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      img {
+        height: 200px;
+        transform: scale(1.5);
+        border-radius: 10px;
+      }
+
+      .carousel {
+        background-color: #66a80f;
+        width: 800px;
+        margin: 100px auto;
+        color: #e9ecef;
+        padding: 32px;
+        padding-left: 86px;
+        position: relative;
+        border-radius: 10px;
+
+        /* FLEX */
+        display: flex;
+        align-items: center;
+        gap: 80px;
+      }
+
+      .quote-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+      }
+
+      .quote-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+
+      .quote-jpb {
+        font-size: 12px;
+      }
+
+      .btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #66a80f;
+      }
+      .btn-left {
+        left: 0;
+      }
+
+      .btn-right {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="dog.jpg" alt="dog" />
+      <blockquote class="quote">
+        <p class="quote-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex suscipit
+          quasi facilis enim voluptas nobis possimus nisi laboriosam totam
+          delectus eum veritatis ab, non minima accusantium iste! Voluptatum,
+          eaque dolores!
+        </p>
+        <p class="quote-author">Dog</p>
+        <p class="quote-job">Model</p>
+      </blockquote>
+
+      <button class="btn btn-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <button class="btn btn-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
